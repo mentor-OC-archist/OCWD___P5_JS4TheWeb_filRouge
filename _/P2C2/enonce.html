@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>P2C2: Récupérez des données d'un service web</title>
+<style>    code[data-claire-semantic="text"]{background: rgba(0,0,0,.04);     padding: 1px 5px;     margin: 0 4px;     border: 1px solid rgba(0,0,0,.09);     display: inline-block;     word-break: break-word;}
+code[data-claire-semantic="json"] .ace-openclassrooms{    margin-top: 25px;
+    background-color: #272822;
+    background: black;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+code[data-claire-semantic="json"]+textarea{display:none;}
+.ace_gutter-cell:before {
+    content: counter(ace_line, decimal);
+    counter-increment: ace_line;
+}
+</style>
+</head>
+
+<body>
+  <a
+    href="https://openclassrooms.com/fr/courses/5543061-ecrivez-du-javascript-pour-le-web/5577591-recuperez-des-donnees-dun-service-web" target="_blank">Chapitre
+    du cours OC</a>
+  <hr />
+
+  <div class="foldable" id="ui-id-4" data-widget="foldable">
+    <h3 id="r-7190577" data-claire-element-id="32158739" class="foldable__button secondTitle js-foldable-button">À vous
+      de jouer !<i class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-5844496" data-claire-element-id="31525818" class="hoveredCourseElement">&nbsp;<img id="r-7200069"
+          data-claire-element-id="31525817"
+          src="https://user.oc-static.com/upload/2021/04/20/16189267631776_A-vous-de-jouer%20%282%29.png"
+          alt="16189267631776_A-vous-de-jouer%20%282%29.png" style="cursor: -webkit-zoom-in;"></p>
+      <p id="r-7190563" data-claire-element-id="31502088">Exercez-vous maintenant avec ce que nous venons d'apprendre.
+      </p>
+      <p id="r-7190564" data-claire-element-id="31574706">Rendez-vous dans <a
+          href="https://codepen.io/fabienhenon/pen/vYxYjpJ" target="_blank" rel="noopener noreferrer nofollow">cet
+          éditeur CodePen</a> pour réaliser l'exercice suivant :</p>
+      <p id="r-7190565" data-claire-element-id="31502090">Dans cet exercice nous voulons récupérer les salutations et
+        les afficher dès que nous cliquons sur le bouton <em>"Bien le bonjour"</em></p>
+      <ul id="r-7190570" data-claire-element-id="32158738" class="">
+        <li id="r-7190567" data-claire-element-id="32158737">
+          <p id="r-7190566" data-claire-element-id="32158736"><strong>Etape 1</strong> : Nous allons commencer par la
+            création d'une fonction &nbsp;<code data-claire-semantic="text">askHello</code>&nbsp; qui va créer une
+            requête avec fetch de type &nbsp;<code data-claire-semantic="text">GET</code>&nbsp; vers le service web avec
+            l'URL &nbsp;<code data-claire-semantic="text">https://mockbin.com/request?greetings=salut</code>&nbsp;</p>
+        </li>
+        <li id="r-7190569" data-claire-element-id="31502094">
+          <p id="r-7190568" data-claire-element-id="31502093"><strong>Etape 2</strong> : Maintenant, nous voudrions
+            récupérer la réponse du service web et l'afficher dans l'élément ayant pour ID &nbsp;<code
+              data-claire-semantic="text">hello-result</code>&nbsp; . Modifiez donc notre fonction &nbsp;<code
+              data-claire-semantic="text">askHello</code>&nbsp; afin de récupérer la réponse du service web dès que tout
+            s'est bien passé. Le service web vous retournera une réponse au format JSON, et vous aurez besoin d'afficher
+            la propriété greetings se trouvant dans l'objet &nbsp;<code
+              data-claire-semantic="text">queryString</code>&nbsp; .</p>
+        </li>
+      </ul>
+      <p id="r-7190571" data-claire-element-id="31502096">Voici à quoi ressemble la réponse JSON :</p>
+      <pre id="r-6847453" data-claire-element-id="31502097" class="code-block"><code data-claire-semantic="json" data-code="{&quot;language&quot;:&quot;json&quot;,&quot;source&quot;:&quot;{\n      &amp;#x22;queryString&amp;#x22;: {\n            &amp;#x22;greetings&amp;#x22;: &amp;#x22;Salut&amp;#x22;,\n            ...\n      },\n      ...\n}&quot;}" class="ace" data-widget="codeBlock"><div class="ace-openclassrooms"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_lparen">{</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span>  <span class="ace_variable">"queryString"</span>: <span class="ace_paren ace_lparen">{</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>    <span class="ace_variable">"greetings"</span>: <span class="ace_string">"Salut"</span>,
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>    ...
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span>  <span class="ace_paren ace_rparen">}</span>,
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span>  ...
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+</div></div></div></code><textarea class="code-block--raw-code"></textarea></pre>
+      <ul id="r-7190574" data-claire-element-id="31502100">
+        <li id="r-7190573" data-claire-element-id="31502099">
+          <p id="r-7190572" data-claire-element-id="31502098"><strong>&nbsp;Etape 3</strong> : Enfin, nous voulons
+            afficher la salutation (et donc appeler notre fonction &nbsp;<code
+              data-claire-semantic="text">askHello</code>) dès que nous cliquons sur le bouton ayant pour ID &nbsp;<code
+              data-claire-semantic="text">ask-hello</code>&nbsp; .</p>
+        </li>
+      </ul>
+      <aside id="r-7190576" data-claire-element-id="31525820" data-claire-semantic="information">
+        <p id="r-7190575" data-claire-element-id="31525819">Vous avez essayé ? Voici la <a
+            href="https://codepen.io/fabienhenon/pen/RwovXJd" target="_blank"
+            rel="noopener noreferrer nofollow">correction CodePen</a>.</p>
+      </aside>
+    </div>
+  </div>
+
+
+  <hr />
+
+  <div class="foldable" id="ui-id-5" data-widget="foldable">
+    <h3 id="r-7190589" data-claire-element-id="31502115" class="foldable__button secondTitle js-foldable-button">En
+      résumé<i class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-7190578" data-claire-element-id="31502104">Dans ce chapitre, vous avez appris :</p>
+      <ul id="r-7190587" data-claire-element-id="31502113">
+        <li id="r-7190580" data-claire-element-id="31502106">
+          <p id="r-7190579" data-claire-element-id="31502105">Que l’API Fetch permet de faire des requêtes HTTP vers un
+            service web ;</p>
+        </li>
+        <li id="r-7190582" data-claire-element-id="31502108">
+          <p id="r-7190581" data-claire-element-id="31502107">Comment l'utiliser pour faire une requête simple à un
+            service web ;</p>
+        </li>
+        <li id="r-7190584" data-claire-element-id="31502110">
+          <p id="r-7190583" data-claire-element-id="31502109">Que le format JSON est très utilisé dans la communication
+            avec les API des services web car il est très proche des objets JavaScript ;</p>
+        </li>
+        <li id="r-7190586" data-claire-element-id="31502112">
+          <p id="r-7190585" data-claire-element-id="31502111">Comment récupérer les données envoyées par un service web.
+          </p>
+        </li>
+      </ul>
+      <p id="r-7190588" data-claire-element-id="31502114" class=""><em>Maintenant que nous savons faire une requête de
+          type GET pour récupérer des données du service web, nous allons voir comment faire une requête POST pour
+          envoyer des données au service web. Mais avant ça, voyons comment préparer nos données à être envoyées au
+          service web.</em></p>
+    </div>
+  </div>
+</body>
+
+</html>

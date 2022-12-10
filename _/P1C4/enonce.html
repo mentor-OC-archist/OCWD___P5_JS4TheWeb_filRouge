@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>P1C4: Écoutez des événements</title>
+<style>    code[data-claire-semantic="text"]{background: rgba(0,0,0,.04);     padding: 1px 5px;     margin: 0 4px;     border: 1px solid rgba(0,0,0,.09);     display: inline-block;     word-break: break-word;}
+code[data-claire-semantic="json"] .ace-openclassrooms{    margin-top: 25px;
+    background-color: #272822;
+    background: black;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+code[data-claire-semantic="json"]+textarea{display:none;}
+.ace_gutter-cell:before {
+    content: counter(ace_line, decimal);
+    counter-increment: ace_line;
+}
+</style>
+</head>
+
+<body>
+  <a
+    href="https://openclassrooms.com/fr/courses/5543061-ecrivez-du-javascript-pour-le-web/5578156-ecoutez-des-evenements" target="_blank">Chapitre
+    du cours OC</a>
+  <hr />
+
+  <div class="foldable" id="ui-id-3" data-widget="foldable">
+    <h3 id="r-5814294" data-claire-element-id="31529696" class="foldable__button secondTitle js-foldable-button">À vous
+      de jouer&nbsp;!<i class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-7200053" data-claire-element-id="31525773" class=""><img id="r-7200052" data-claire-element-id="31525772"
+          src="https://user.oc-static.com/upload/2021/04/20/16189267631776_A-vous-de-jouer%20%282%29.png"
+          alt="16189267631776_A-vous-de-jouer%20%282%29.png" style="cursor: -webkit-zoom-in;"></p>
+      <p id="r-5812945" data-claire-element-id="28033208">Voyons maintenant quelques cas d'utilisation pour mettre en
+        pratique ces nouvelles connaissances.</p>
+      <p id="r-6847342" data-claire-element-id="31501862" class="">Entraînez-vous sur <a
+          href="https://codepen.io/nicolaspatschkowski/pen/yLNvXMx" target="_blank"
+          rel="noopener noreferrer nofollow">cet éditeur automatique CodePen</a> en réalisant l'exercice suivant :</p>
+      <p id="r-6847343" data-claire-element-id="31529692">Nous souhaitons lancer une bataille de clics ! Nous avons
+        un&nbsp;article&nbsp;qui correspond à notre&nbsp;<em>parent</em>&nbsp;(ID &nbsp;<code
+          data-claire-semantic="text">parent</code>&nbsp; ), et nous avons un lien (balise &nbsp;<code
+          data-claire-semantic="text">a</code>&nbsp; ) qui correspond à notre&nbsp;<em>enfant</em>&nbsp;(ID &nbsp;<code
+          data-claire-semantic="text">child</code>&nbsp; ). Le but est de cliquer soit dans le parent, soit dans
+        l'enfant et d'afficher le nombre de clics dans chaque élément directement dans les
+        éléments&nbsp;#parent-count&nbsp;et&nbsp;#child-count.</p>
+      <ol id="r-6847352" data-claire-element-id="31529695">
+        <li id="r-6847345" data-claire-element-id="30642845">
+          <p id="r-6847344" data-claire-element-id="30642844">Commencez par écouter les
+            événements&nbsp;click&nbsp;depuis l'élément&nbsp;#parent. Puis affichez le nombre de clics dans
+            l'élément&nbsp;#parent-count.</p>
+        </li>
+        <li id="r-6847347" data-claire-element-id="30642847">
+          <p id="r-6847346" data-claire-element-id="30642846">Faites la même chose mais avec l'élément&nbsp;#child. Il
+            faudra afficher le nombre de clics sur cet élément dans l'élément&nbsp;#child-count. Maintenant, dès
+            que&nbsp;vous&nbsp;cliquez sur le parent ou l'enfant les compteurs se mettent à jour. Mais vous avez sans
+            doute remarqué que lorsque vous cliquez sur l'enfant, le compteur du parent se met aussi à jour ?</p>
+        </li>
+        <li id="r-6847349" data-claire-element-id="31529694">
+          <p id="r-6847348" data-claire-element-id="31529693">Maintenant, faites&nbsp;de sorte à ce que lorsque vous
+            cliquez sur l'enfant, seul le compteur de l'enfant se mette à jour.&nbsp;<em>N'oubliez pas que l'élément
+              enfant se trouve à l'intérieur de l'élément parent. </em>Ça ne se voit pas ici car nous sommes dans un
+            environnement protégé, mais en réalité,&nbsp;#child&nbsp;est un lien. Et en sa qualité de lien, lorsque l'on
+            clique dessus, le navigateur doit changer de page.</p>
+        </li>
+        <li id="r-6847351" data-claire-element-id="30642851">
+          <p id="r-6847350" data-claire-element-id="30642850">Evitez qu'un clic sur le lien ne&nbsp;vous fasse changer
+            de page: supprimez ce comportement par défaut.</p>
+        </li>
+      </ol>
+      <aside id="r-7190443" data-claire-element-id="31501864" data-claire-semantic="information">
+        <p id="r-7190442" data-claire-element-id="31501863">Retrouvez la solution dans ce <a
+            href="https://codepen.io/fabienhenon/pen/MWbLOyd" target="_blank" rel="noopener noreferrer nofollow">nouveau
+            CodePen</a> et comparez avec ce que vous avez fait.&nbsp;</p>
+      </aside>
+    </div>
+  </div>
+
+
+  <hr />
+
+  <div class="foldable" id="ui-id-4" data-widget="foldable">
+    <h3 id="r-5591854" data-claire-element-id="28453534"
+      class="foldable__button secondTitle js-foldable-button hoveredCourseElement">En résumé<i
+        class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-5753061" data-claire-element-id="28301384" class="">Dans ce chapitre, nous avons appris :</p>
+      <ul id="r-5753070" data-claire-element-id="28301447" class="">
+        <li id="r-5753063" data-claire-element-id="28301386">
+          <p id="r-5753062" data-claire-element-id="28301385">Ce qu'est un événement ;</p>
+        </li>
+        <li id="r-5753065" data-claire-element-id="28301442">
+          <p id="r-5753064" data-claire-element-id="28301441">À&nbsp;écouter un événement ;</p>
+        </li>
+        <li id="r-5753067" data-claire-element-id="28301444">
+          <p id="r-5753066" data-claire-element-id="28301443">À&nbsp;annuler le comportement par défaut d'un événement ;
+          </p>
+        </li>
+        <li id="r-5753069" data-claire-element-id="28301446">
+          <p id="r-5753068" data-claire-element-id="28301445">À&nbsp;stopper la propagation d'un événement.</p>
+        </li>
+      </ul>
+      <p id="r-5591851" data-claire-element-id="28453532" class=""><em>Nous venons de voir comment gérer les événements
+          simples, c'est-à-dire ceux qui n'ont pas de données (comme un clic). Mais vous devez vous demander comment
+          gérer des événements plus complexes, comme&nbsp; un événement de mouvement de souris pour lequel on a besoin
+          de connaître sa position&nbsp;sur la page.</em></p>
+      <p id="r-5591852" data-claire-element-id="28453533"><em>C'est ce que nous allons voir dans le prochain chapitre
+          !</em></p>
+      <p id="r-5591853" data-claire-element-id="27930251"></p>
+    </div>
+  </div>
+</body>
+
+</html>

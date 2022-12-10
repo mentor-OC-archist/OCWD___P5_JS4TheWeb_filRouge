@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>P1C5: Récupérez des données utilisateurs avec les événements</title>
+<style>    code[data-claire-semantic="text"]{background: rgba(0,0,0,.04);     padding: 1px 5px;     margin: 0 4px;     border: 1px solid rgba(0,0,0,.09);     display: inline-block;     word-break: break-word;}
+code[data-claire-semantic="json"] .ace-openclassrooms{    margin-top: 25px;
+    background-color: #272822;
+    background: black;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+code[data-claire-semantic="json"]+textarea{display:none;}
+.ace_gutter-cell:before {
+    content: counter(ace_line, decimal);
+    counter-increment: ace_line;
+}
+</style>
+</head>
+
+<body>
+  <a
+    href="https://openclassrooms.com/fr/courses/5543061-ecrivez-du-javascript-pour-le-web/5578181-recuperez-des-donnees-utilisateurs-avec-les-evenements" target="_blank">Chapitre
+    du cours OC</a>
+  <hr />
+
+  <div class="foldable" id="ui-id-4" data-widget="foldable">
+    <h3 id="r-5814311" data-claire-element-id="31525789" class="foldable__button secondTitle js-foldable-button">À vous
+      de jouer&nbsp;!<i class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-7200060" data-claire-element-id="31525788" class="hoveredCourseElement"><img id="r-7200059"
+          data-claire-element-id="31525787"
+          src="https://user.oc-static.com/upload/2021/04/20/16189267631776_A-vous-de-jouer%20%282%29.png"
+          alt="16189267631776_A-vous-de-jouer%20%282%29.png" style="cursor: -webkit-zoom-in;"></p>
+      <p id="r-5814309" data-claire-element-id="30643007" class="">Essayons maintenant de gérer un formulaire au travers
+        de quelques exercices. Rendez-vous sur <a href="https://codepen.io/nicolaspatschkowski/pen/MWwQoQZ"
+          target="_blank" rel="noopener noreferrer nofollow">cet éditeur CodePen</a> pour réaliser l'exercice suivant:
+      </p>
+      <p id="r-6847389" data-claire-element-id="30642978">Nous avons ici un formulaire et nous aimerions restituer les
+        réponses de notre formulaire dans l'élément du dessous. De plus, nous voudrions afficher la position de la
+        souris quand elle se trouve dans cet élément.</p>
+      <ol id="r-6847396" data-claire-element-id="30642985" class="">
+        <li id="r-6847391" data-claire-element-id="30642980">
+          <p id="r-6847390" data-claire-element-id="30642979">Ecoutez les événements input sur l'élément #name afin de
+            savoir quand le contenu du champ texte est changé. Affichez le contenu actuel dans l'élément #res-name</p>
+        </li>
+        <li id="r-6847393" data-claire-element-id="30642982">
+          <p id="r-6847392" data-claire-element-id="30642981">Maintenant nous voulons écouter l'événement du changement
+            de choix du genre (#gender), et afficher le résultat dans l'élément #res-gender.</p>
+        </li>
+        <li id="r-6847395" data-claire-element-id="30642984">
+          <p id="r-6847394" data-claire-element-id="30642983">&nbsp;Nous souhaitons maintenant afficher les coordonnées
+            de la souris à l'intérieur de l'élément #result dès que celle-ci passe par dessus. Ce que nous voulons,
+            c'est avoir les coordonnées relatives au coin en haut à gauche de l'élément #result.</p>
+        </li>
+      </ol>
+      <aside id="r-7190450" data-claire-element-id="31501878" data-claire-semantic="information">
+        <p id="r-7190449" data-claire-element-id="31501877">Et voici <a
+            href="https://codepen.io/fabienhenon/pen/KKNJyaE" target="_blank" rel="noopener noreferrer nofollow">la
+            solution !</a></p>
+      </aside>
+      <aside id="r-7190455" data-claire-element-id="31501898" data-claire-semantic="information">
+        <p id="r-7190454" data-claire-element-id="31501897">Comme nous l'avons fait durant ce chapitre, je ne peux que
+          vous conseiller d'aller voir la documentation lorsque vous avez un doute. Elle peut vous être d'une très
+          grande aide pour trouver ce que vous recherchez. Sinon, une simple recherche sur votre moteur de recherche
+          favori suffit dans 99 % des cas.&nbsp;<img alt=";)" class="smilies js-smiley"
+            src="/bundles/common/images/smiley/clin.png"></p>
+      </aside>
+    </div>
+  </div>
+
+
+  <hr />
+
+  <div class="foldable" id="ui-id-5" data-widget="foldable">
+    <h3 id="r-6847404" data-claire-element-id="32732308"
+      class="foldable__button secondTitle js-foldable-button hoveredCourseElement">En résumé<i
+        class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-5753094" data-claire-element-id="28305526" class="">Dans ce chapitre, vous avez appris :</p>
+      <ul id="r-5753101" data-claire-element-id="28305598" class="">
+        <li id="r-5753096" data-claire-element-id="28305528">
+          <p id="r-5753095" data-claire-element-id="28305527">De quoi était composé un événement ;</p>
+        </li>
+        <li id="r-5753098" data-claire-element-id="28305577">
+          <p id="r-5753097" data-claire-element-id="28305576">À&nbsp;utiliser les données de l'événement pour récupérer
+            la position de la souris ;</p>
+        </li>
+        <li id="r-5753100" data-claire-element-id="28305597">
+          <p id="r-5753099" data-claire-element-id="28305596">À utiliser les données de l'événement pour récupérer le
+            texte d'un champ.</p>
+        </li>
+      </ul>
+      <p id="r-5591895" data-claire-element-id="11313073" class="">Nous venons de voir comment gérer des événements plus
+        complexes qui contiennent des données. Vous savez maintenant tout ce qu'il faut pour manipuler le DOM et
+        interagir avec vos utilisateurs.</p>
+      <p id="r-5591896" data-claire-element-id="32732307"><em>Il est maintenant temps d'aller plus loin en apprenant à
+          communiquer avec un serveur pour y lire ou y stocker des données (et pourquoi pas les données que vous avez
+          récupérées de vos utilisateurs !)</em></p>
+    </div>
+  </div>
+</body>
+
+</html>

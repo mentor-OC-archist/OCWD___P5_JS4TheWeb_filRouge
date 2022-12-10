@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>P2C3: Validez les données saisies par vos utilisateurs</title>
+<style>    code[data-claire-semantic="text"]{background: rgba(0,0,0,.04);     padding: 1px 5px;     margin: 0 4px;     border: 1px solid rgba(0,0,0,.09);     display: inline-block;     word-break: break-word;}
+code[data-claire-semantic="json"] .ace-openclassrooms{    margin-top: 25px;
+    background-color: #272822;
+    background: black;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+code[data-claire-semantic="json"]+textarea{display:none;}
+.ace_gutter-cell:before {
+    content: counter(ace_line, decimal);
+    counter-increment: ace_line;
+}
+</style>
+</head>
+
+<body>
+  <a
+    href="https://openclassrooms.com/fr/courses/5543061-ecrivez-du-javascript-pour-le-web/5577611-validez-les-donnees-saisies-par-vos-utilisateurs" target="_blank">Chapitre
+    du cours OC</a>
+  <hr />
+
+  <div class="foldable" id="ui-id-5" data-widget="foldable">
+    <h3 id="r-5853153" data-claire-element-id="31525835"
+      class="foldable__button secondTitle js-foldable-button hoveredCourseElement">À vous de jouer&nbsp;!<i
+        class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-7200074" data-claire-element-id="31525834" class=""><img id="r-7200073" data-claire-element-id="31525833"
+          src="https://user.oc-static.com/upload/2021/04/20/16189267631776_A-vous-de-jouer%20%282%29.png"
+          alt="16189267631776_A-vous-de-jouer%20%282%29.png" style="cursor: -webkit-zoom-in;"></p>
+      <p id="r-5853151" data-claire-element-id="30643152">Voici quelques exercices pour vous faire les dents&nbsp;sur la
+        validation 😎. Rendez-vous sur <a href="https://codepen.io/nicolaspatschkowski/pen/GRJQvGY" target="_blank"
+          rel="noopener noreferrer nofollow">cet éditeur CodePen</a> et réalisez les étapes suivantes:&nbsp;</p>
+      <ol id="r-6847481" data-claire-element-id="31502136">
+        <li id="r-6847473" data-claire-element-id="30643154">
+          <p id="r-6847472" data-claire-element-id="30643153">Nous souhaitons dans un premier temps valider le
+            champ&nbsp;<code>Code</code>&nbsp;du formulaire. A chaque lettre saisie dans le champ ayant pour
+            ID&nbsp;<code>code</code>&nbsp;nous voulons vérifier que la valeur du champ commence bien
+            par&nbsp;<code>CODE-</code>&nbsp;grâce à une&nbsp;<em>Regex</em>&nbsp;que voici
+            :&nbsp;<code>/^CODE-/</code>. Si la valeur commence bien par&nbsp;<code>CODE-</code>&nbsp;alors nous
+            affichons dans l'élément ayant pour
+            ID&nbsp;<code>code-validation</code>&nbsp;:&nbsp;<code>Code valide</code>, sinon nous affichons dans cet
+            élément&nbsp;<code>Code invalide</code>.</p>
+        </li>
+        <li id="r-6847476" data-claire-element-id="30643157">
+          <p id="r-6847474" data-claire-element-id="30643155">Maintenant que nous savons si notre code est valide ou
+            non, nous voudrions griser (grâce à l'attribut&nbsp;<code>disabled</code>) le bouton de soumission (L'input
+            de type&nbsp;<code>submit</code>&nbsp;ayant pour ID&nbsp;<code>submit-btn</code>) quand le code est
+            invalide, et le dégriser quand le code est valide.</p>
+          <p id="r-6847475" data-claire-element-id="30643156">Cela signifie que nous allons devoir ajouter un
+            attribut&nbsp;<code>disabled="true"</code>&nbsp;au bouton de soumission quand le code est invalide. Et
+            supprimer cet attribut&nbsp;<code>disabled</code>&nbsp;quand le code est valide (Rappelez-vous du cours sur
+            la modification du DOM pour définir et supprimer des attributs).</p>
+        </li>
+        <li id="r-6847480" data-claire-element-id="31502135">
+          <p id="r-6847477" data-claire-element-id="30643158">Finalement, nous avons un
+            champ&nbsp;<code>Email</code>&nbsp;et nous voudrions le rendre obligatoire et obliger l'utilisateur à entrer
+            une adresse email valide. Il faudra aussi empêcher le formulaire de se soumettre s'il n'est pas valide.</p>
+          <p id="r-6847478" data-claire-element-id="30643159">Mais nous voudrions faire tout ça uniquement avec le
+            HTML5, sans utiliser de code JavaScript.</p>
+          <p id="r-7190597" data-claire-element-id="31502134">Vous pouvez changer le&nbsp;<code>type</code>&nbsp;du
+            champ email plutôt que d'utiliser une Regex via&nbsp;<code>pattern</code>&nbsp;<img alt=";)"
+              class="smilies js-smiley" src="/bundles/common/images/smiley/clin.png"></p>
+        </li>
+      </ol>
+      <aside id="r-7190599" data-claire-element-id="31502138" data-claire-semantic="information">
+        <p id="r-7190598" data-claire-element-id="31502137">Vous avez terminé ? Voici la <a
+            href="https://codepen.io/fabienhenon/pen/JjbxgaZ" target="_blank"
+            rel="noopener noreferrer nofollow">solution CodePen</a> !</p>
+      </aside>
+    </div>
+  </div>
+
+
+  <hr />
+
+  <div class="foldable" id="ui-id-6" data-widget="foldable">
+    <h3 id="r-5853136" data-claire-element-id="28453653" class="foldable__button secondTitle js-foldable-button">En
+      résumé<i class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-5761550" data-claire-element-id="28311371" class="">Dans ce chapitre, vous avez appris :</p>
+      <ul id="r-5761559" data-claire-element-id="28311389" class="">
+        <li id="r-5761552" data-claire-element-id="28311382">
+          <p id="r-5761551" data-claire-element-id="28311381">Qu'il ne faut jamais faire confiance à l'utilisateur ;</p>
+        </li>
+        <li id="r-5761554" data-claire-element-id="28311384">
+          <p id="r-5761553" data-claire-element-id="28311383">À valider des données lors d'événements ;</p>
+        </li>
+        <li id="r-5761556" data-claire-element-id="28311386">
+          <p id="r-5761555" data-claire-element-id="28311385">À utiliser les Regex pour valider les données ;</p>
+        </li>
+        <li id="r-5761558" data-claire-element-id="28311388">
+          <p id="r-5761557" data-claire-element-id="28311387">À utiliser les attributs fournis par HTML pour valider les
+            données.</p>
+        </li>
+      </ul>
+      <p id="r-5684964" data-claire-element-id="28453652" class=""><em>Maintenant qu'on peut protéger notre site web de
+          nos utilisateurs, et leur afficher de beaux messages d'erreur quand les données saisies ne sont pas celles
+          attendues, nous allons pouvoir sauvegarder nos données sur notre service web !</em></p>
+      <p id="r-5684965" data-claire-element-id="27932632"></p>
+    </div>
+  </div>
+</body>
+
+</html>

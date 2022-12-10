@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>P3C2: Gérez du code asynchrone</title>
+<style>    code[data-claire-semantic="text"]{background: rgba(0,0,0,.04);     padding: 1px 5px;     margin: 0 4px;     border: 1px solid rgba(0,0,0,.09);     display: inline-block;     word-break: break-word;}
+code[data-claire-semantic="json"] .ace-openclassrooms{    margin-top: 25px;
+    background-color: #272822;
+    background: black;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+code[data-claire-semantic="json"]+textarea{display:none;}
+.ace_gutter-cell:before {
+    content: counter(ace_line, decimal);
+    counter-increment: ace_line;
+}
+</style>
+</head>
+
+<body>
+  <a
+    href="https://openclassrooms.com/fr/courses/5543061-ecrivez-du-javascript-pour-le-web/5577676-gerez-du-code-asynchrone" target="_blank">Chapitre
+    du cours OC</a>
+  <hr />
+
+  <div class="foldable" id="ui-id-4" data-widget="foldable">
+    <h3 id="r-5864698" data-claire-element-id="31529824" class="foldable__button secondTitle js-foldable-button">À vous
+      de jouer&nbsp;!<i class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-7200904" data-claire-element-id="31526734" class="hoveredCourseElement"><img id="r-7200903"
+          data-claire-element-id="31526733"
+          src="https://user.oc-static.com/upload/2021/04/20/16189267631776_A-vous-de-jouer%20%282%29.png"
+          alt="16189267631776_A-vous-de-jouer%20%282%29.png" style="cursor: -webkit-zoom-in;"></p>
+      <p id="r-5864696" data-claire-element-id="30643232" class="">Rendez-vous sur <a
+          href="https://codepen.io/nicolaspatschkowski/pen/NWqyaKP" target="_blank"
+          rel="noopener noreferrer nofollow">cet éditeur CodePen</a> pour réaliser l'exercice suivant.</p>
+      <p id="r-6847507" data-claire-element-id="30643233" class="">Dans cet exercice j'ai créé 2 fonctions asynchrones
+        (avec le mot clé&nbsp;<code>async</code>)&nbsp;<code>getNumber1()</code>&nbsp;et&nbsp;<code>getNumber2()</code>
+      </p>
+      <ol id="r-6847512" data-claire-element-id="30643284">
+        <li id="r-6847509" data-claire-element-id="30643263">
+          <p id="r-6847508" data-claire-element-id="30643262">Dans un premier temps nous allons créer une fonction
+            asynchrone (avec&nbsp;<code>async</code>) qui s'appelle&nbsp;<code>compute</code>&nbsp;et qui va récupérer
+            les résultats des 2 fonctions
+            asynchrones&nbsp;<code>getNumber1()</code>&nbsp;et&nbsp;<code>getNumber2()</code>&nbsp;(avec&nbsp;<code>await</code>)
+            et renvoyer la somme des 2 valeurs récupérées.</p>
+        </li>
+        <li id="r-6847511" data-claire-element-id="30643283">
+          <p id="r-6847510" data-claire-element-id="30643282">Maintenant nous allons appeler notre
+            fonction&nbsp;<code>compute()</code>&nbsp;et utiliser sa valeur de retour comme
+            une&nbsp;<code>Promise</code>&nbsp;pour finalement afficher le résultat de la promesse dans le contenu HTML
+            de l'élément ayant pour ID&nbsp;<code>result</code>.&nbsp;</p>
+        </li>
+      </ol>
+      <aside id="r-7190678" data-claire-element-id="31529823" data-claire-semantic="information">
+        <p id="r-7190677" data-claire-element-id="31529822">Vous avez terminé ? Voici la <a
+            href="https://codepen.io/fabienhenon/pen/XWNGgvd" target="_blank"
+            rel="noopener noreferrer nofollow">solution CodePen</a>.</p>
+      </aside>
+    </div>
+  </div>
+
+
+  <hr />
+  <div class="foldable" id="ui-id-5" data-widget="foldable">
+    <h3 id="r-5697281" data-claire-element-id="33261245"
+      class="foldable__button secondTitle js-foldable-button hoveredCourseElement">En résumé<i
+        class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-7200967" data-claire-element-id="31526912">Dans ce chapitre, vous avez appris :</p>
+      <ul id="r-7190686" data-claire-element-id="33261244">
+        <li id="r-7190681" data-claire-element-id="31526914">
+          <p id="r-7190680" data-claire-element-id="31526913">Qu'une&nbsp;callback est une fonction appelée “plus tard”
+            ;</p>
+        </li>
+        <li id="r-7190683" data-claire-element-id="31529223">
+          <p id="r-7190682" data-claire-element-id="31529222">Que les&nbsp;<code
+              data-claire-semantic="text">Promise</code>&nbsp; sont des objets qui nous fournissent les fonctions<code
+              data-claire-semantic="text"><em>then()</em></code>et<code
+              data-claire-semantic="text"><em>catch()</em></code>pour gérer le code asynchrone ;</p>
+        </li>
+        <li id="r-7200969" data-claire-element-id="33261243">
+          <p id="r-7200968" data-claire-element-id="33261242">Que<code data-claire-semantic="text">async</code>&nbsp;
+            et&nbsp; &nbsp;<code data-claire-semantic="text">await</code>&nbsp; permettent de faire de l’asynchrone avec
+            une syntaxe plus naturelle, et qu’ils utilisent en arrière plan les <em>Promise.</em></p>
+        </li>
+      </ul>
+      <p id="r-7190687" data-claire-element-id="31502324"><em>Nous connaissons maintenant 3 techniques pour faire du
+          code asynchrone et pouvoir utiliser sa valeur ; voyons maintenant comment ça peut nous servir dans le cas de
+          plusieurs requêtes HTTP !</em></p>
+      <p id="r-5730872" data-claire-element-id="28036491"></p>
+    </div>
+  </div>
+
+</body>
+
+</html>

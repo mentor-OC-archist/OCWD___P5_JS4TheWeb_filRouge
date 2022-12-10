@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>P1C2: Accédez aux éléments du DOM</title>
+<style>    code[data-claire-semantic="text"]{background: rgba(0,0,0,.04);     padding: 1px 5px;     margin: 0 4px;     border: 1px solid rgba(0,0,0,.09);     display: inline-block;     word-break: break-word;}
+code[data-claire-semantic="json"] .ace-openclassrooms{    margin-top: 25px;
+    background-color: #272822;
+    background: black;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+code[data-claire-semantic="json"]+textarea{display:none;}
+.ace_gutter-cell:before {
+    content: counter(ace_line, decimal);
+    counter-increment: ace_line;
+}
+</style>
+</head>
+
+<body>
+  <a
+    href="https://openclassrooms.com/fr/courses/5543061-ecrivez-du-javascript-pour-le-web/5577476-accedez-aux-elements-du-dom" target="_blank">Chapitre
+    du cours OC</a>
+  <hr />
+
+
+  <div class="foldable" id="ui-id-3" data-widget="foldable">
+    <h3 id="r-5796282" data-claire-element-id="33213005" class="foldable__button secondTitle js-foldable-button">À vous
+      de jouer !<i class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-7200043" data-claire-element-id="31525753" class="hoveredCourseElement"><img id="r-7200042"
+          data-claire-element-id="31525752" src="../YourTurn.png" alt="" style="cursor: -webkit-zoom-in;"></p>
+      <p id="r-5812736" data-claire-element-id="28300541" class="">Vous connaissez maintenant plusieurs techniques pour
+        accéder aux éléments du DOM. Il est temps de mettre en pratique ces connaissances avec un exercice !</p>
+      <p id="r-6845317" data-claire-element-id="30637622">Entrainez-vous dans l'éditeur de code Javascript de cet <a
+          href="https://codepen.io/nicolaspatschkowski/pen/OJVOyXZ" target="_blank"
+          rel="noopener noreferrer nofollow">éditeur en ligne CodePen</a>&nbsp;à accomplir les tâches ci-dessous.</p>
+      <ol id="r-6844930" data-claire-element-id="33213004">
+        <li id="r-6844919" data-claire-element-id="33213003">
+          <p id="r-6844918" data-claire-element-id="33213002">Récupérez le premier élément ayant pour
+            ID&nbsp;<code>main-content</code>&nbsp;grâce à son ID ;</p>
+        </li>
+        <li id="r-6844921" data-claire-element-id="30637036">
+          <p id="r-6844920" data-claire-element-id="30637035">Récupérez les éléments ayant pour classe &nbsp;<code
+              data-claire-semantic="text">important</code>&nbsp; ;</p>
+        </li>
+        <li id="r-6844923" data-claire-element-id="30637038">
+          <p id="r-6844922" data-claire-element-id="30637037">Récupérez les éléments de type &nbsp;<code
+              data-claire-semantic="text">article</code>&nbsp; ;</p>
+        </li>
+        <li id="r-6844925" data-claire-element-id="30700873">
+          <p id="r-6844924" data-claire-element-id="30700872">Récupérez les éléments de type &nbsp;<code
+              data-claire-semantic="text">li</code>&nbsp;qui sont dans une liste&nbsp;<code
+              data-claire-semantic="text">ul</code>&nbsp;ayant la classe &nbsp;<code
+              data-claire-semantic="text">important</code>&nbsp;. Cette liste doit elle-même être dans un article (<code
+              data-claire-semantic="text">article</code>&nbsp;) ;</p>
+        </li>
+        <li id="r-6844927" data-claire-element-id="30700875">
+          <p id="r-6844926" data-claire-element-id="30700874">En reprenant le résultat de la tâche précédente, récupérez
+            l'élément&nbsp;<code data-claire-semantic="text">li</code>&nbsp;suivant de la liste&nbsp;<code
+              data-claire-semantic="text">ul</code>&nbsp;.</p>
+        </li>
+      </ol>
+      <aside id="r-7190434" data-claire-element-id="31501844" data-claire-semantic="information" class="">
+        <p id="r-7190432" data-claire-element-id="31501842">Alors, avez-vous réussi ?</p>
+        <p id="r-7190433" data-claire-element-id="31501843">&nbsp;Je vous propose de comparer votre exercice avec la
+          solution que vous retrouverez ici dans <a href="https://codepen.io/fabienhenon/pen/rNWPGXE" target="_blank"
+            rel="noopener noreferrer nofollow">un nouveau CodePen</a>.</p>
+      </aside>
+    </div>
+  </div>
+
+
+
+  <hr>
+
+  <div class="foldable" id="ui-id-4" data-widget="foldable">
+    <h3 id="r-5579856" data-claire-element-id="30637048" class="foldable__button secondTitle js-foldable-button">En
+      résumé<i class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-5752976" data-claire-element-id="28300561" class="">Dans ce&nbsp;chapitre, vous avez appris :</p>
+      <ul id="r-5752989" data-claire-element-id="28300566">
+        <li id="r-5752978" data-claire-element-id="27879875">
+          <p id="r-5752977" data-claire-element-id="27879874">Ce qu'est le &nbsp;<code
+              data-claire-semantic="text">document</code></p>
+        </li>
+        <li id="r-5752980" data-claire-element-id="28300563">
+          <p id="r-5752979" data-claire-element-id="28300562">À utiliser plusieurs fonctions comme&nbsp;&nbsp;<code
+              data-claire-semantic="text">getElementById&nbsp;</code>&nbsp;,&nbsp;<code
+              data-claire-semantic="text">getElementsByClassName</code>&nbsp;,<code
+              data-claire-semantic="text">getElementsByTagName</code>&nbsp; et&nbsp;<code
+              data-claire-semantic="text">querySelector</code></p>
+        </li>
+        <li id="r-5752988" data-claire-element-id="28300565">
+          <p id="r-5752987" data-claire-element-id="28300564">À parcourir les enfants et le parent d'un élément.</p>
+        </li>
+      </ul>
+      <p id="r-5579853" data-claire-element-id="28453512"><em>Nous savons maintenant retrouver des éléments dans le DOM,
+          mais on ne sait pas encore comment modifier leur contenu. C'est donc ce que nous allons voir dans le prochain
+          chapitre !</em></p>
+      <div id="r-6844931" data-claire-element-id="30637047"></div>
+    </div>
+  </div>
+
+</body>
+</html>
